@@ -1,0 +1,22 @@
+<html>
+<body style="text-align:center;">
+    <h3>Make first letter of a string uppercase</h3>
+
+    <input id="input" type="text" name="input" />
+    <button onclick="capitalizeFLetter()">
+        Click to capitalize
+    </button>
+    <h3 id="div" style="color: rgb(3, 3, 3)">
+    </h3>
+
+    <script>
+        function capitalizeFLetter() {
+        var input = document.getElementById("input");
+        var x = document.getElementById("div");
+        var string = input.value;
+        x.innerHTML = string[0].toUpperCase() +
+            string.slice(1);
+        }
+    </script>
+</body>
+</html>
